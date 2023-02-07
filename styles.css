@@ -58,7 +58,7 @@ position:relative;
 .main-nav_item:hover,
 .main-nav_item:active {
     color: #F9FAF8;
-    border-bottom: 2px solid #F9FAF8;
+   text-decoration: underline;
     cursor: pointer;
 }
 
@@ -157,11 +157,12 @@ align-items: center;
 
 /* Call to Action Section */
 .call-to-action{
-    width:70%;
+    width:90%;
     margin:0 auto;
     margin-top:8rem;
     display:flex;
     align-items: center;
+    justify-content: space-around;
     background-color: #3882F6;
     border-radius: 22px;
     padding:2rem ;
@@ -178,9 +179,18 @@ border-radius: 0.5rem;
     font-weight: bold;
    font-size:1.1rem;
    cursor:pointer;
+   transition:    transform, padding 0.5s;
+
+}
+
+.call-to-action button:active, .call-to-action button:hover{
+  padding: 0.8rem 1.8rem;
+  background-color: #F9FAF8;
+  color: #3882F6;
+ 
 }
 .cta-text{
-    margin:0 auto;
+   
     color:#F9FAF8;
   
 }
