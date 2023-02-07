@@ -15,22 +15,20 @@ body {
 width: 100%;
 background-color: #1F2937;
 color:#F9FAF8;
-
+position:relative;
   /* position: fixed;
   top: 0;
   left: 0; */
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0 2rem;
   z-index: 60;
 }
 
 .header-brand{
-
     font-size:1.5rem;
     color:#F9FAF8;
-
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
@@ -44,13 +42,19 @@ color:#F9FAF8;
 }
 
 .main-nav_item{
-    margin:0 1rem;
+    margin:0 1.2rem;
     
+    
+}
+.main-nav_item a {
+    text-decoration: none;
+    color:#F9FAF8;
+    padding:4px 8px;
 }
 .main-nav_item:hover,
 .main-nav_item:active {
     color: #F9FAF8;
-    border-bottom: 3px solid #F9FAF8;
+    border-bottom: 2px solid #F9FAF8;
     cursor: pointer;
 }
 
@@ -63,7 +67,9 @@ main{
     padding:100px 0;
     display:flex;
     justify-content: space-around;
-    background-color: #1F2937;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/beach.jpg") center/cover no-repeat border-box,
+    #1F2937;
 }
 .intro-description{
     flex:0 1 40%;
